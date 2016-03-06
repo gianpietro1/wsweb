@@ -6,21 +6,6 @@ GIT
       capistrano (~> 3.0)
       sshkit (~> 1.2)
 
-GIT
-  remote: https://github.com/cowboyd/libv8.git
-  revision: 78ee2548a0b157a8716a052ef7234e8236e7ce75
-  submodules: true
-  specs:
-    libv8 (3.16.14.13)
-
-GIT
-  remote: https://github.com/cowboyd/therubyracer.git
-  revision: fbbce3d8b04b08db7b537119bff22b33f3d1e230
-  specs:
-    therubyracer (0.12.2)
-      libv8 (~> 3.16.14.0)
-      ref
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -176,7 +161,6 @@ GEM
     rake (10.5.0)
     rdoc (4.2.2)
       json (~> 1.4)
-    ref (2.0.0)
     responders (2.1.1)
       railties (>= 4.2.0, < 5.1)
     ruby_parser (3.7.3)
@@ -211,9 +195,6 @@ GEM
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.7.2)
-      execjs (>= 0.3.0)
-      json (>= 1.8.0)
     warden (1.2.6)
       rack (>= 1.0)
     web-console (2.3.0)
@@ -238,7 +219,6 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
-  libv8!
   pg
   pundit
   rails (= 4.2.5.1)
@@ -248,7 +228,5 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spring
   sqlite3
-  therubyracer!
   turbolinks
-  uglifier (>= 1.3.0)
   web-console (~> 2.0)
