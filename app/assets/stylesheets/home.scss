@@ -13,6 +13,8 @@
 
 .header {
   margin: 25px auto;
+  /*position: fixed;
+  top: 0;*/
 }
 
 .logo img {
@@ -20,21 +22,21 @@
   margin: 0 auto;
 }
 
-.main-menu {
+#main-menu {
   clear: both;
   padding-top: 12px;
   margin: 0 auto;
   text-align: center;
 }
 
-.main-menu li {
+#main-menu li {
   font-size: 0.8em;
   display: inline-block;
   text-transform: uppercase;
   margin: 0 -3px;
 }
 
-.main-menu a {
+#main-menu a {
   display: block;
   height: 50px;
   width: 100%;
@@ -46,12 +48,12 @@
   padding-top: 14px;
 }
 
-.main-menu a:hover {
+#main-menu a:hover {
   background-color: grey;
   color: white;
 }
 
-.main-menu .active {
+#main-menu .active {
   background-color: #002263;
   color: white;
 }
@@ -100,17 +102,25 @@
   clear:both;
 }
 
+/* test 
+#products,
+#about,
+#contact {
+  height: 300px;
+}
+*/
+
 /********* Tablet ********/
 
 @media (min-width: 512px) {
 
 /* Header */
 
-.main-menu li {
+#main-menu li {
   font-size: 0.9em;
 }
 
-.main-menu a {
+#main-menu a {
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -148,12 +158,12 @@
   float: left;
 }
 
-.main-menu {
+#main-menu {
   clear: none;
   float: right;
 }
 
-.main-menu a {
+#main-menu a {
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -162,6 +172,7 @@
 
 .mid {
   height: 400px;
+  /*margin-top: 200px;*/
 }
 
 .mid .msg {
