@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+* { 
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+  padding: 0 !important;
+}
+
+body {
+  font-family: 'Montserrat', serif;
+  color: #002263;
+}
+
+.footer {
+  height: 100px;
+}

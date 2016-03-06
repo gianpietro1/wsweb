@@ -1,3 +1,39 @@
 .container
-  .logo
-    = image_tag( 'logo.png' )
+  .header.clearfix
+    .logo
+      = image_tag( 'logo.png' )
+
+    .main-menu
+      %ul
+        %li
+          = link_to 'home', '#', class: (controller_name == 'home' ? 'active' : '')
+        %li
+          = link_to 'products', '#'
+        %li
+          = link_to 'about us', '#'
+        %li
+          = link_to 'contact', '#'
+
+  .mid.clearfix
+    .msg
+      Ready for an agile, automated network?
+
+  .bottom.clearfix
+    .features.first.col
+      %h3
+        Open Software
+      %p
+        We integrate open, mature software into your network to achieve a seamless automation
+    .features.second.col
+      %h3
+        Tailor-made UIs
+      %p
+        We build user-friendly UIs to make the day-to-day tasks simple for operators and end customers
+    .features.third.col
+      %h3
+        Increased profit
+      %p
+        We help our customers build new services through open, reliable platforms to increase margins
+
+  .footer
+
