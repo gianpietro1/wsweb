@@ -73,8 +73,8 @@
 
 .mid .msg {
   padding-top: 110px;
-  font-size: 1.2em;
-  width: 50%;
+  font-size: 1.4em;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
 }
@@ -109,7 +109,6 @@
 #products,
 #about,
 #contact {
-  height: 300px;
 }
 
 /* Content Generic */
@@ -133,6 +132,25 @@
   background-color: grey;
 }
 
+.products {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.product_div {
+  color: white;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.product_div img {
+  display: block;
+  margin: 10px auto;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
 /* About us */
 
 #about > .title {
@@ -141,6 +159,27 @@
 
 #about.contentblock {
   background-color: white;
+  padding: 10px 15%;
+  margin: 0 auto;
+}
+
+.about_content {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: #002263;
+  clear: both;
+}
+
+.about_div_left,
+.about_div_right {
+  width: 100%;
+  text-align: center;
+  background-color: #002263;
+  padding: 25px 10px;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 20px;
 }
 
 /* Contact */
@@ -153,6 +192,17 @@
   background-color: grey;
 }
 
+.contact_content {
+  padding-top: 6%;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: white;
+}
+
+.contact_content a {
+  color: white;
+}
 
 /* Footer */
 
@@ -227,12 +277,16 @@ a.social:hover {
 /* Features */
 
 .features_container {
-  padding-bottom: 40px;
   clear: both;
 }
 
 .features p {
   font-size: 0.8em;
+}
+
+/* Contact */
+.contact_content {
+  padding-top: 3%;
 }
 
 
@@ -298,6 +352,50 @@ a.social:hover {
   float: left;
   clear: none;
   margin: 0 auto;
+}
+
+/* Content */
+#products,
+#about,
+#contact {
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+#about {
+  min-height: 300px;
+}
+
+/* Product */
+
+.product_div {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+}
+
+/* About */
+
+.about_div_left,
+.about_div_right {
+  width: 48%;
+  height: 110px;  
+}
+
+
+.about_div_left {
+  float: left;
+}
+
+.about_div_right {
+  float: right;
+}
+
+/* Contact */
+
+.contact_content {
+  padding-top: 2%;
 }
 
 /* Footer */

@@ -21,7 +21,7 @@
 
     .mid.clearfix
       .msg
-        Ready for an agile, automated network?
+        Ready for an agile, programmable, automated network?
 
     .features_container.clearfix
       .features.first.col
@@ -31,9 +31,9 @@
           We integrate open, mature software into your network to achieve a seamless automation
       .features.second.col
         %h3
-          Tailor-made UIs
+          Programmable Networking
         %p
-          We build user-friendly UIs to make the day-to-day tasks simple for operators and end customers
+          We enable programmable networks by providing standard APIs to reduce operational costs and time to market
       .features.third.col
         %h3
           Increased profit
@@ -42,13 +42,36 @@
 
   #products.contentblock
     .title
-      PRODUCTS
-  #about.contentblock
+    .products.clearfix
+      .product_div_first.product_div
+        = image_tag( 'product1.png' )
+        Open Networking Software Integration
+      .product_div_second.product_div
+        = image_tag( 'product2.png' )
+        Network Programmability for Automation
+      .product_div_third.product_div
+        = image_tag( 'product3.png' )
+        SDN-enabled Services Design & Implementation
+
+  #about.contentblock.clearfix
     .title
-      ABOUT US
+    %p.about_content
+      Whitestack is next generation networking. 
+    .about_div_left
+      We strive to provide best-in-class products and services to bring automation and agility to any kind of network. 
+    .about_div_right
+      A team built by decades of networking and software experience, represented by engineers from all over the world.
+    %p.about_content
+      Software-powered Networking, as never seen before.
   #contact.contentblock
     .title
-      CONTACT
+    %p.contact_content
+      Start discovering the new generation of networking.
+      %br
+      Contact us today at
+      %br
+      %a{href:'mailto:sales@whitestack.com', target:"_top"}
+        sales@whitestack.com
 
   %footer
     %ul
@@ -57,7 +80,7 @@
           Twitter
         %a{href:'https://www.linkedin.com/company/whitestack', class:"social linkedin",target:"_blank"}
           LinkedIn
-        %a{href:'#', class:"social github",target:"_blank"}
+        %a{href:'https://github.com/whitestack', class:"social github",target:"_blank"}
           Github
       %p.copyright
         &copy; 2016, Whitestack Inc.

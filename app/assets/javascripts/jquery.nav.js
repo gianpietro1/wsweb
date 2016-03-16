@@ -44,7 +44,7 @@
 			easing: 'swing',
 			filter: '',
 			scrollSpeed: 750,
-			scrollThreshold: 0.3,
+			scrollThreshold: 0.5,
 			begin: false,
 			end: false,
 			scrollChange: false
@@ -202,7 +202,8 @@
 		},
 
 		scrollTo: function(target, callback) {
-			var offset = $(target).offset().top - $('.header').height();
+			// glch addition to compensate menu
+			var offset = $(target).offset().top - $('.header').height() - 8;
 
 			$('html, body').animate({
 				scrollTop: offset
